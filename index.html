@@ -32,9 +32,9 @@
         }
 
         .video-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-top: 20px;
         }
 
@@ -43,15 +43,24 @@
             border-radius: 10px;
             padding: 1rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .video img {
+            width: 100%;
+            border-radius: 8px;
         }
 
         .video h3 {
             color: #4CAF50;
             margin-top: 0;
+            margin-bottom: 0.5rem;
         }
 
         .video p {
             color: #666666;
+            margin-top: 0.5rem;
         }
 
         .video a {
@@ -87,25 +96,16 @@
 
         <div class="video-list">
             <div class="video">
+                <img src="https://i.ytimg.com/vi/vfB_Odw0S_g?si=SrVPeSynbjt6W6u8/maxresdefault.jpg" alt="Thumbnail">
                 <h3>Exploring Tokyo</h3>
                 <p>Experience the bustling streets of Tokyo in this immersive walk.</p>
-                <p><a href="https://youtu.be/vfB_Odw0S_g?si=SrVPeSynbjt6W6u8" target="_blank">Watch Now</a></p>
+                <p><a href="hhttps://youtu.be/vfB_Odw0S_g?si=SrVPeSynbjt6W6u8" target="_blank">Watch Now</a></p>
             </div>
             <div class="video">
+                <img src="https://i.ytimg.com/vi/VIDEO_ID_HERE/maxresdefault.jpg" alt="Thumbnail">
                 <h3>Walking in Paris</h3>
                 <p>Take a stroll along the Seine and through charming Parisian neighborhoods.</p>
-                <p><a href="https://youtu.be/klHTHoVKlhM?si=NL1MjCW-Cr4TPY3r" target="_blank">Watch Now</a></p>
+                <p><a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE" target="_blank">Watch Now</a></p>
             </div>
-            <!-- Add more videos as needed -->
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Koochay.com - Explore the World!</p>
-    </footer>
-</body>
-
-</html>
-
-
-
+            <div class="video">
+                <img src="https
