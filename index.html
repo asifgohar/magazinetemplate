@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koochay - Discover Your Passions</title>
+  <title>Koochay - Unforgettable Travel Adventures</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
+      background-color: #f0f0f0;
     }
     .container {
       max-width: 1000px;
@@ -17,35 +17,65 @@
       padding: 20px;
     }
     .header {
-      background-color: #333;
+      background-color: #2962FF;
       color: #fff;
       padding: 10px;
+      text-align: center;
     }
     .logo {
-      font-size: 30px;
+      font-size: 36px;
       font-weight: bold;
     }
-    .videos {
+    .navigation {
+      background-color: #eee;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-item {
+      list-style: none;
+      margin: 0 10px;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: #333;
+    }
+    .main {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       margin-top: 20px;
     }
-    .video-card {
+    .country-card {
       width: 300px;
+      margin: 10px;
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-      padding: 10px;
       border-radius: 5px;
+      overflow: hidden;
     }
-    .video-card h3 {
-      font-size: 18px;
+    .country-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .country-card h3 {
+      padding: 10px;
       margin-bottom: 5px;
+      font-size: 20px;
     }
-    .video-card a {
+    .country-card p {
+      padding: 0 10px 10px;
+      line-height: 1.5;
+    }
+    .explore-button {
+      display: block;
+      width: 100%;
+      background-color: #2962FF;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
       text-decoration: none;
-      color: #000;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -53,27 +83,30 @@
   <header class="header">
     <div class="container">
       <h1 class="logo">Koochay</h1>
+      <p>Unforgettable Travel Adventures Await</p>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Explore Your World Through Videos</h2>
-    <p>Unleash your curiosity and dive into a world of knowledge and entertainment with Koochay. Watch inspiring videos, discover hidden gems, and fuel your passions!</p>
+  <nav class="navigation">
+    <div class="container">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="videos">
-      <div class="video-card">
-        <h3>Nature's Beauty</h3>
-        <a href="https://www.youtube.com/watch?v=YQmHN0tOPQ0"> (YouTube Link Here) </a>
+  <main class="container">
+    <h2>Explore Breathtaking Destinations</h2>
+    <p>Embark on a journey to discover the rich cultures, stunning landscapes, and captivating experiences that Europe has to offer.</p>
+
+    <div class="main">
+      <div class="country-card">
+        <img src="images/qatar.jpg" alt="Qatar">
+        <h3>Qatar</h3>
+        <p>Experience a unique blend of tradition and modernity in Qatar. Explore the bustling capital Doha, marvel at the architectural wonders, and immerse yourself in the rich cultural heritage.</p>
+        <a href="#" class="explore-button">Explore Qatar</a>
       </div>
-      <div class="video-card">
-        <h3>Travel Adventures</h3>
-        <a href="https://www.youtube.com/watch?v=tggWp8A-4JQ"> (YouTube Link Here) </a>
-      </div>
-      <div class="video-card">
-        <h3>DIY Crafts</h3>
-        <a href="https://www.youtube.com/watch?v=5GY_8PpR7Tk"> (YouTube Link Here) </a>
-      </div>
-      </div>
-  </main>
-</body>
-</html>
+      <div class="country-card">
+        
